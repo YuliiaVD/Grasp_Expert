@@ -4,14 +4,13 @@ public class User {
 
     private Address address;
 
-    public void setAddress(String address) {
-        this.address = new Address(address);
+    public void setAddress(int streetNumber, String streetName, String city, String state, int postCode) {
+        this.address = new Address(streetNumber, streetName, city, state, postCode);
 
     }
 
-    public String getAddress() {
-        return address.getAddress();
+    public Address getAddress() {
+        return address;
     }
-
 
 }
